@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <script defer src="./js/script.js"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+              <div class="burger__menu">
+                <span></span>
+              </div>
+              <nav class="header__nav">
+                  <ul class="header__nav-list">
+                      <li class="header__nav-list-item">
+                          <a href="#hero" class="header__nav-link lng-home" key="home">
+                              Home
+                          </a>
+                      </li>
+                      <li class="header__nav-list-item">
+                          <a href="#about" class="header__nav-link lng-about" key="about">
+                              About me
+                          </a>
+                      </li>
+                      <li class="header__nav-list-item">
+                          <a href="#skills" class="header__nav-link lng-skills" key="skills">
+                              Skills
+                          </a>
+                      </li>
+                      <li class="header__nav-list-item">
+                          <a href="#galery" class="header__nav-link lng-portfolio" key="portfolio">
+                              Portfolio
+                          </a>
+                      </li>
+                      <li class="header__nav-list-item">
+                          <a href="#footer" class="header__nav-link lng-contacts" key="contacts">
+                              Contacts
+                          </a>
+                      </li>
+                  </ul>
+                  <div class="header__lang">
+                    <button class="translate" value="en" onclick="getValue(this)">ENG</button>
+                    |
+                    <button class="translate" value="ru" onclick="getValue(this)">RU</button>
+                  </div>
+
+              </nav>
+            </div>
+        </header>
+        <main class="main">
+            <section class="hero" id="hero">
+                <div class="container hero__container">
+                    <h1 class="hero__title lng-title" key="title">
+                        Denis Novik
+                    </h1>
+                    <p class="hero__descr lng-descr" key="descr">
+                        UX | UI designer 24 years old, Minsk
+                    </p>
+                    <div class="hero__lang">
+                        <button class="translate" value="en" onclick="getValue(this)">ENG</button>
+                        |
+                        <button class="translate" value="ru" onclick="getValue(this)">RU</button>
+                    </div>
+
+                </div>
+                <div class="container hero__cover">
+                      <!-- <img src="./img/hero-bg.jpg" alt="cover" class="hero__cover-img"> -->
+                </div>
+            </section>
+            <section class="about" id="about">
+                <div class="container about__container">
+                    <h2 class="about__title lng-about-title" key="about-title">
+                        About me
+                    </h2>
+                    <p class="about__descr lng-about-descr-1" key="about-descr-1">
+                        Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.
+                    </p>
+                    <p class="about__descr lng-about-descr-2" key="about-descr-2">
+                        I'm studying at courses "Web and mobile design interfaces" in IT-Academy.
+                    </p>
+                    <p class="about__descr lng-about-descr-3" key="about-descr-3">
+                        Ready to implement excellent projects with wonderful people.
+                    </p>
+                </div>
+            </section>
+            <section class="skills" id="skills">
+                <div class="container skills__container">
+                    <h2 class="skills__title lng-skills-title" key="skills-title">
+                        Skills
+                    </h2>
+                    <p class="skills__subtitle lng-skills-subtitle" key="skills-subtitle">
+                        I work in such programs as
+                    </p>
+                    <div class="skills__cards">
+                        <div class="skills__card">
+                            <img src="./img/skills-ps.svg" alt="Photoshop" class="skills__kard-img">
+                            <p class="skills__card-descr">
+                                Adobe Photoshop
+                            </p>
+                            <div class="skills__card-level">
+                                <img src="./img/skills-star-black.svg" alt="level" class="skills__card-level-icon">
+                                <img src="./img/skills-star-black.svg" alt="level" class="skills__card-level-icon">
+                                <img src="./img/skills-star-black.svg" alt="level" class="skills__card-level-icon">
+                                <img src="./img/skills-star-black.svg" alt="level" class="skills__card-level-icon">
+                                <img src="./img/skills-star-gray.svg" alt="level" class="skills__card-level-icon">
+                            </div>
+                        </div>
+                        <div class="skills__card">
+                            <img src="./img/skills-ai.svg" alt="" class="skills__kard-img">
+                            <p class="skills__card-descr">
+                                Adobe Illustrator
+                            </p>
+                            <div class="skills__card-level">
+                                <img src="./img/skills-star-black.svg" alt="level" class="skills__card-level-icon">
+                                <img src="./img/skills-star-black.svg" alt="level" class="skills__card-level-icon">
+                                <img src="./img/skills-star-black.svg" alt="level" class="skills__card-level-icon">
+                                <img src="./img/skills-star-gray.svg" alt="level" class="skills__card-level-icon">
+                                <img src="./img/skills-star-gray.svg" alt="level" class="skills__card-level-icon">
+                            </div>
+                        </div>
+                        <div class="skills__card">
+                            <img src="./img/skills-ae.svg" alt="" class="skills__kard-img">
+                            <p class="skills__card-descr">
+                                Adobe After Effects
+                            </p>
+                            <div class="skills__card-level">
+                                <img src="./img/skills-star-black.svg" alt="level" class="skills__card-level-icon">
+                                <img src="./img/skills-star-black.svg" alt="level" class="skills__card-level-icon">
+                                <img src="./img/skills-star-black.svg" alt="level" class="skills__card-level-icon">
+                                <img src="./img/skills-star-black.svg" alt="level" class="skills__card-level-icon">
+                                <img src="./img/skills-star-gray.svg" alt="level" class="skills__card-level-icon">
+                            </div>
+                        </div>
+                        <div class="skills__card">
+                            <img src="./img/skills-figma.svg" alt="" class="skills__kard-img">
+                            <p class="skills__card-descr">
+                                Figma
+                            </p>
+                            <div class="skills__card-level">
+                                <img src="./img/skills-star-black.svg" alt="level" class="skills__card-level-icon">
+                                <img src="./img/skills-star-black.svg" alt="level" class="skills__card-level-icon">
+                                <img src="./img/skills-star-black.svg" alt="level" class="skills__card-level-icon">
+                                <img src="./img/skills-star-black.svg" alt="level" class="skills__card-level-icon">
+                                <img src="./img/skills-star-gray.svg" alt="level" class="skills__card-level-icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="galery" id="galery">
+                <div class="container galery__container">
+                    <h2 class="galery__tittle lng-galery-title" key="galery-title">
+                        Portfolio
+                    </h2>
+                    <div class="galery__img-block" id="galery-1"></div>
+                    <a class="galery__link lng-galery-link-1" key="galery-link-1" href="#">Online fashion store - Homepage</a>
+                    <div class="galery__img-block" id="galery-2"></div>
+                    <a class="galery__link lng-galery-link-2" key="galery-link-2" href="#">Reebok Store - Concept</a>
+                    <div class="galery__img-block" id="galery-3"></div>
+                    <a class="galery__link lng-galery-link-3" key="galery-link-3" href="#">Braun Landing Page - Concept</a>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" id="footer">
+            <div class="container footer__container">
+                <h2 class="footer__title lng-footer-title" key="footer-title">
+                    Contacts
+                </h2>
+                <p class="footer__descr lng-footer-descr" key="footer-descr">
+                    Want to know more or just chat? You are welcome!
+                </p>
+                <a href="" class="footer__button lng-footer-btn" key="footer-btn">Send message</a>
+                <div class="footer__block-icon">
+                    <a href="" class="footer__link-icon">
+                        <img src="./img/contacts-1.svg" alt="icon" class="footer__icon">
+                    </a>
+                    <a href="" class="footer__link-icon">
+                        <img src="./img/contacts-2.svg" alt="icon" class="footer__icon">
+                    </a>
+                    <a href="" class="footer__link-icon">
+                        <img src="./img/contacts-3.svg" alt="icon" class="footer__icon">
+                    </a>
+                    <a href="" class="footer__link-icon">
+                        <img src="./img/contacts-4.svg" alt="icon" class="footer__icon">
+                    </a>
+                </div>
+                <p class="footer__text">Like me on</p>
+                <p class="footer__text">LinkedIn, Instagram, Behance, Dribble</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

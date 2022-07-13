@@ -1,0 +1,234 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@media (max-width:767px){
+  .hero {
+    padding-bottom: 50px;
+  }
+
+  .about{
+    padding: 50px 0 50px 0;
+  }
+
+  .skills{
+    padding: 50px 0 50px 0;
+  }
+
+  .galery{
+    padding: 50px 0 50px 0;
+  }
+
+  .galery__img-block {
+    height: 400px;
+  }
+  .galery__link:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  .footer{
+    padding: 50px 0 50px 0;
+  }
+}
+
+@media (max-width:576px) {
+  .skills__title {
+    margin-bottom: 35px;
+  }
+  .skills__subtitle {
+    margin-bottom: 40px;
+  }
+
+  .skills__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .skills__card:not(:last-child){
+    margin-bottom: 55px;
+  }
+
+  .skills__kard-img{
+    margin-bottom: 10px;
+  }
+  .skills__card-descr{
+    margin-bottom: 8px;
+  }
+
+  .galery__img-block {
+    height: 300px;
+  }
+
+  .footer__link-icon:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+@media(max-width:480px) {
+  .container {
+    padding: 0 26px 0 26px;
+  }
+
+  .header {
+    height: 0px;
+  }
+
+  .burger__menu {
+    cursor: pointer;
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 33px;
+    height: 19px;
+    right: -92%;
+    top: 68px;
+  }
+
+
+  .burger__menu span,
+  .burger__menu::after,
+  .burger__menu::before {
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background-color: #070707;
+  }
+
+  .burger__menu::after,
+  .burger__menu::before {
+    content: '';
+  }
+
+  .burger__menu::before {
+    top: 0;
+  }
+
+  .burger__menu::after {
+    bottom: 0;
+  }
+
+  .burger__menu span{
+    top: 50%;
+    -webkit-transform: scale(1) translate(0px, -50%);
+        -ms-transform: scale(1) translate(0px, -50%);
+            transform: scale(1) translate(0px, -50%);
+  }
+
+  .header__nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 65px 25px;
+    -webkit-transition: left .3s ease-in-out;
+    -o-transition: left .3s ease-in-out;
+    transition: left .3s ease-in-out;
+    overflow: auto;
+  }
+
+  .header__nav-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .header__nav-list-item {
+    margin-bottom: 65px;
+  }
+
+  .header__nav-link {
+    font-size: 34px;
+    line-height: 42px;
+    font-weight: 700;
+  }
+
+  .header__nav._active{
+    left: 0;
+  }
+
+  .header__lang {
+    display: block;
+    position: absolute;
+    right: -15%;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    font-size: 34px;
+    line-height: 42px;
+    font-weight: 700;
+  }
+
+  .burger__menu._active span {
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+  }
+
+  .burger__menu._active::before {
+    -webkit-transform: rotate(45deg) translate(0px, -50%);
+        -ms-transform: rotate(45deg) translate(0px, -50%);
+            transform: rotate(45deg) translate(0px, -50%);
+    top: 50%;
+  }
+  .burger__menu._active::after {
+    -webkit-transform: rotate(-45deg) translate(0px, 50%);
+        -ms-transform: rotate(-45deg) translate(0px, 50%);
+            transform: rotate(-45deg) translate(0px, 50%);
+    bottom: 50%;
+  }
+
+  .hero{
+    padding-top: 55px;
+  }
+
+  .hero__container{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 35px;
+  }
+
+  .hero__cover{
+    max-width: 316px;
+    height: 478px;
+    margin-bottom: 83px;
+    background: url('../img/hero-bg-mob.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .container.hero__cover{
+    padding: 0;
+  }
+
+  .hero__lang {
+    display: none;
+  }
+
+  .about__descr:not(:last-child){
+    margin-bottom: 30px;
+  }
+
+  .galery__img-block{
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  .footer__button{
+    width: 100%;
+  }
+}
